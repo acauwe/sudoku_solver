@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Alexander Cauwe"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sudoku solver</title>
+    <style>
+        td {
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        td:nth-of-type(3), td:nth-of-type(6) {
+            border-right: 2px solid black;
+        }
+
+        tr:nth-of-type(3) td, tr:nth-of-type(6) td {
+            border-bottom: 2px solid black;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        .given{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div id="sudokuContainer"></div>
+
+<button id="solveButton">
+    Solve
+</button>
+
+<form>
+    <label>Show progress:</label><input type="checkbox" id="progress">
+</form>
+<script src="assets/SudokuGame.js"></script>
+<script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
